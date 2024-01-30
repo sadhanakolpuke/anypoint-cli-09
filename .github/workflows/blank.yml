@@ -27,5 +27,10 @@ jobs:
         run: npm install -g anypoint-cli-v4
 
       # Automation using Any CLI
-      - name: Automation using Any CLI
-        run: anypoint-cli-v4 account:user:describe --client_id 2728d996206645efa1cff9619876493a --client_secret 596c7707D4ad4E8E947C405ef224de68 -o json
+      - name: Print Account Information
+        run: anypoint-cli-v4 account:user:describe --client_id 44b2fa0319514d5b94b4718be66bc66f --client_secret 59AB929f3471474DA2AeBAAc7624FaB0 -o json
+
+      - name: Cloudhub Apps list
+        run: anypoint-cli-v4 runtime-mgr:application:list --environment dev --organization d08e955f-b452-435d-aae9-4caae2f97e74 --client_id 44b2fa0319514d5b94b4718be66bc66f --client_secret 59AB929f3471474DA2AeBAAc7624FaB0 -o json
+
+        
