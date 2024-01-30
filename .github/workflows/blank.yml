@@ -28,6 +28,4 @@ jobs:
 
       # Automation using Any CLI
       - name: Automation using Any CLI
-        run: anypoint-cli-v4 account:user:describe --client_id 2728d996206645efa1cff9619876493a --client_secret 596c7707D4ad4E8E947C405ef224de68 
-
-        
+        run: anypoint-cli-v4 account:user:describe --client_id 2728d996206645efa1cff9619876493a --client_secret 596c7707D4ad4E8E947C405ef224de68
